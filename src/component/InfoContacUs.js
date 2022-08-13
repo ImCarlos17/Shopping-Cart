@@ -7,7 +7,7 @@ import ContactIcon from "./ContactIcon";
 
 const InfoContacUs = () => {
   return (
-    <div className="infoContactUs flex h-60 items-center mt-60">
+    <div className="infoContactUs flex h-60 items-center mt-60 border-black border-2 rounded-lg ">
       <div>
         <ContactIcon
           img={gitHubSvg}

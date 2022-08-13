@@ -7,19 +7,28 @@ const NavBar = () => {
       <nav>
         <ul>
           <div>
-            <Link to="/" className="text-yellow-700 hover:text-yellow-400">
+            <Link
+              to="/"
+              className="text-xl text-yellow-700 hover:text-yellow-400"
+            >
               Home
             </Link>
-            <Link to="/shop" className="text-yellow-700 hover:text-yellow-400">
+            <Link
+              to="/shop"
+              className="text-xl text-yellow-700 hover:text-yellow-400"
+            >
               Shop
             </Link>
             <Link
               to="/contact"
-              className="text-yellow-700 hover:text-yellow-400"
+              className="text-xl text-yellow-700 hover:text-yellow-400"
             >
               Contact
             </Link>
-            <Link to="/cart" className="text-yellow-700 hover:text-yellow-400">
+            <Link
+              to="/cart"
+              className="text-xl text-yellow-700 hover:text-yellow-400"
+            >
               Cart
             </Link>
           </div>
