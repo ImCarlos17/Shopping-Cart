@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header sticky top-0">
       <Link to="/">
         <h1 className="text-4xl font-semibold text-green-600">
           Dog Clothes Store

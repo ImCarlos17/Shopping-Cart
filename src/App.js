@@ -8,7 +8,7 @@ import Contact from "./page/Contact";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="h-full w-screen bg-withe-300">
       <Browser>
         <Header />
         <Routes>

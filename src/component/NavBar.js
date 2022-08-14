@@ -1,4 +1,5 @@
 import React from "react";
+import iconCartSvg from "../static/icons/cart.svg";
 import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
@@ -6,7 +7,7 @@ const NavBar = () => {
     <div>
       <nav>
         <ul>
-          <div>
+          <div className="flex  items-center">
             <Link
               to="/"
               className="text-xl text-yellow-700 hover:text-yellow-400"
@@ -29,7 +30,12 @@ const NavBar = () => {
               to="/cart"
               className="text-xl text-yellow-700 hover:text-yellow-400"
             >
-              Cart
+              <div className="flex h-10 w-10 rounded-full bg-white content-center relative">
+                <img src={iconCartSvg} />
+                <span className="flex w-full justify-center items-center absolute pt-3 text-base">
+                  5
+                </span>
+              </div>
             </Link>
           </div>
         </ul>
