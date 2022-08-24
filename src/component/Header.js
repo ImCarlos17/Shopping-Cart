@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NavBar from "./NavBar";
 
-const Header = () => {
+const Header = ({ setVisible }) => {
   return (
     <div className="header sticky top-0">
       <Link to="/">
@@ -10,7 +10,7 @@ const Header = () => {
           Dog Clothes Store
         </h1>
       </Link>
-      <NavBar />
+      <NavBar setVisible={setVisible} />
     </div>
   );
 };

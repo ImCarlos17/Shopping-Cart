@@ -1,16 +1,19 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Card from "../component/Card";
-import products from "../util/products";
+import { addToCard, clearCart, delFromCart } from "../actions/shoppingActions";
 
 const Shop = () => {
+  const state = useSelector((state) => state.reducer);
+  const { products, cart } = state.shopping;
+  const dispatch = useDispatch();
   return (
     <div className=" grid gap-4 grid-cols-3 grid-rows-4 px-2.5 py-12 gap-y-32">
       {products.map((product) => (
         <Card
-          title={product.name}
-          price={product.price}
-          img={product.img}
+          data={product}
           key={product.id}
+          addToCart={() => dispatch(addToCard(product.id))}
         />
       ))}
     </div>
