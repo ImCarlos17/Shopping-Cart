@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <Provider store={store}>
-      <div className="h-full w-screen bg-withe-300">
+      <div className="h-full bg-withe-300">
         <Browser>
           <Header setVisible={setVisible} />
           <Routes>

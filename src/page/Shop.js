@@ -8,7 +8,7 @@ const Shop = () => {
   const { products, cart } = state.shopping;
   const dispatch = useDispatch();
   return (
-    <div className=" grid gap-4 grid-cols-3 grid-rows-4 px-2.5 py-12 gap-y-32">
+    <div className="grid grid-cols-3 grid-rows-4 px-2.5 py-12 gap-y-32">
       {products.map((product) => (
         <Card
           data={product}
