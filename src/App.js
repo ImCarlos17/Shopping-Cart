@@ -35,7 +35,7 @@ const App = () => {
             visible={visible}
             onClose={() => setVisible((prevState) => !prevState)}
           >
-            <Cart />
+            <Cart onClose={() => setVisible((prevState) => !prevState)} />
           </Modal>
         </Portal>
       </div>

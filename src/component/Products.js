@@ -10,7 +10,7 @@ const Products = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="flex flex-col gap-y-6 border-black border-2 w-96 max-h-96 overflow-auto">
+    <div className="flex flex-col gap-y-6  w-96 max-h-96 overflow-auto">
       {cart &&
         cart.map((item) => (
           <ProductContainer
