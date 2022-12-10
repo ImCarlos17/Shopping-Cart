@@ -17,27 +17,23 @@ const NavBar = ({ setVisible }) => {
         <ul>
           <div className="flex  items-center">
             <Link
-              to="/shopping-cart"
-              className="text-xl text-yellow-700 hover:text-yellow-400"
-            >
+              to="/"
+              className="text-xl text-yellow-700 hover:text-yellow-400">
               Home
             </Link>
             <Link
               to="/shopping-cart/shop"
-              className="text-xl text-yellow-700 hover:text-yellow-400"
-            >
+              className="text-xl text-yellow-700 hover:text-yellow-400">
               Shop
             </Link>
             <Link
               to="/shopping-cart/contact"
-              className="text-xl text-yellow-700 hover:text-yellow-400"
-            >
+              className="text-xl text-yellow-700 hover:text-yellow-400">
               Contact
             </Link>
             <div
               onClick={() => setVisible((prevState) => !prevState)}
-              className="text-xl text-yellow-700 hover:text-yellow-400 cursor-pointer"
-            >
+              className="text-xl text-yellow-700 hover:text-yellow-400 cursor-pointer">
               <div className="flex h-10 w-10 rounded-full bg-white content-center relative">
                 <img src={iconCartSvg} />
                 <span className="flex w-full justify-center items-center absolute pt-3 text-base text-black">

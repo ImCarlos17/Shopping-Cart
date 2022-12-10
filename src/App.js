@@ -1,7 +1,6 @@
 import "./App.css";
 import React from "react";
 import { useState } from "react";
-import ReactDOM from "react-dom";
 import Header from "./component/Header";
 import { BrowserRouter as Browser, Route, Routes } from "react-router-dom";
 import Home from "./page/Home";
@@ -24,7 +23,7 @@ const App = () => {
         <Browser>
           <Header setVisible={setVisible} />
           <Routes>
-            <Route path="/shopping-cart" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/shopping-cart/shop" element={<Shop />} />
             <Route path="/shopping-cart/contact" element={<Contact />} />
             <Route path="*" element={<Error404 />} />
@@ -33,8 +32,7 @@ const App = () => {
         <Portal>
           <Modal
             visible={visible}
-            onClose={() => setVisible((prevState) => !prevState)}
-          >
+            onClose={() => setVisible((prevState) => !prevState)}>
             <Cart onClose={() => setVisible((prevState) => !prevState)} />
           </Modal>
         </Portal>
