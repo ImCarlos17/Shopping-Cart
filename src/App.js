@@ -26,7 +26,6 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/shopping-cart/shop" element={<Shop />} />
             <Route path="/shopping-cart/contact" element={<Contact />} />
-            <Route path="*" element={<Error404 />} />
           </Routes>
         </Browser>
         <Portal>

@@ -1,8 +1,8 @@
 {
-  "name": "Shopping-Cart",
+  "name": "shopping-cart",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ImCarlos17.github.io/Shopping-Cart",
+  "homepage": "http://ImCarlos17.github.io",
   "dependencies": {
     "@redux-devtools/core": "^3.13.1",
     "@reduxjs/toolkit": "^1.8.5",
