@@ -2,6 +2,7 @@
   "name": "Shopping-Cart",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://ImCarlos17.github.io/Shopping-Cart",
   "dependencies": {
     "@redux-devtools/core": "^3.13.1",
     "@reduxjs/toolkit": "^1.8.5",
@@ -19,6 +20,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
